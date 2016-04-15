@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Create htdocs for web root
+if [ ! -d /usr/share/nginx/html ] ; then
+  mkdir -p /usr/share/nginx/html
+  chown nginx:nginx /usr/share/nginx/html
+fi
+
+mkdir -p /tmp/nginx/client-body
+chown -R nginx /tmp/nginx
