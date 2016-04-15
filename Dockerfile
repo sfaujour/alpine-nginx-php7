@@ -30,7 +30,7 @@ RUN apk upgrade -U && \
     php7-ctype \
     php7-mbstring
 
-COPY .docker/alpine-php7-nginx/rootfs /
+COPY /rootfs /
 
 # Small fixes
 RUN ln -s /etc/php7 /etc/php && \
