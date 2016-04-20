@@ -32,7 +32,4 @@ RUN ln -s /etc/php7 /etc/php && \
 RUN curl -sS https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer
 
-# Setup Volume
-VOLUME ["/etc/php7"]
-
 ENTRYPOINT ["/init"]
