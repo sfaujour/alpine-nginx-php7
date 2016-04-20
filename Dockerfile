@@ -16,6 +16,7 @@ RUN apk upgrade -U && \
     php7-openssl \
     php7-mysqli \
     php7-ctype \
+    php7-opcache \
     php7-mbstring
 
 COPY /rootfs /
