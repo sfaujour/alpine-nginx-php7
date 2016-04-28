@@ -4,4 +4,4 @@ Current PHP-Version: 7.0.5
 
 # Including
  - php opcache
- - composer (/usr/bin/composer)
+ - composer (/usr/bin/composer) 

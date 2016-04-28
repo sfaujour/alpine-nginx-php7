@@ -37,6 +37,6 @@ VOLUME ["/usr/share/nginx/html"]
 
 # ADD SOURCE
 ONBUILD COPY ./src /usr/share/nginx/html
-ONBUILD RUN chown -Rf nginx:nginx /usr/share/nginx/html/
+ONBUILD RUN chown -Rf nginx:nginx /usr/share/nginx/html
 
 ENTRYPOINT ["/init"]
