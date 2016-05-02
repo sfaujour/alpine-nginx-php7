@@ -36,7 +36,4 @@ RUN curl -sS https://getcomposer.org/installer | php \
 ONBUILD COPY ./src /usr/share/nginx/html
 ONBUILD RUN chown -Rf nginx:nginx /usr/share/nginx/html
 
-# Setup Volume
-VOLUME ["/usr/share/nginx/html"]
-
 ENTRYPOINT ["/init"]

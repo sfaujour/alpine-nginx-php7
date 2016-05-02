@@ -3,7 +3,7 @@
  - PHP-Version: 7.0.5
 
 # Including
- - NGINX 1.*.*
+ - NGINX 1.*
  - PHP 7.*
  - composer (/usr/local/bin/composer)
 
