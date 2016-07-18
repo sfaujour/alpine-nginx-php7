@@ -1,4 +1,4 @@
-FROM shito/alpine-nginx:latest
+FROM shito/alpine-nginx:edge
 MAINTAINER Sebastian Knoth <sk@bytepark.de>
 
 # Add PHP 7
