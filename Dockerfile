@@ -4,6 +4,7 @@ MAINTAINER Sebastian Knoth <sk@bytepark.de>
 # Add PHP 7
 RUN apk upgrade -U && \
     apk --update --repository=http://dl-4.alpinelinux.org/alpine/edge/testing add \
+    openssl \
     php7 \
     php7-xml \
     php7-xsl \
