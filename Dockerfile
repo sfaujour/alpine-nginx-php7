@@ -8,6 +8,7 @@ RUN apk upgrade -U && \
     php7 \
     php7-xml \
     php7-xsl \
+    php7-pdo \
     php7-pdo_mysql \
     php7-mcrypt \
     php7-curl \
@@ -18,7 +19,8 @@ RUN apk upgrade -U && \
     php7-mysqli \
     php7-ctype \
     php7-opcache \
-    php7-mbstring
+    php7-mbstring \
+    php7-session
 
 COPY /rootfs /
 
