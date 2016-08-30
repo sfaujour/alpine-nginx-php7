@@ -20,7 +20,8 @@ RUN apk upgrade -U && \
     php7-ctype \
     php7-opcache \
     php7-mbstring \
-    php7-session
+    php7-session \
+    php7-pcntl
 
 COPY /rootfs /
 
