@@ -21,6 +21,7 @@ RUN apk upgrade -U && \
     php7-opcache \
     php7-mbstring \
     php7-session \
+    php7-pdo_sqlite \
     php7-pcntl
 
 COPY /rootfs /
