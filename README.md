@@ -1,10 +1,10 @@
 # Alpine-Linux + nginx + php7
- - NGINX Version: 1.9.14
- - PHP-Version: 7.0.5
 
-# Including
- - NGINX 1.*
- - PHP 7.*
+[![](https://images.microbadger.com/badges/image/shito/alpine-nginx-php7.svg)]
+
+## Including
+ - NGINX 1.* (latest pkgs version)
+ - PHP 7.* (latest pkgs version)
  - composer (/usr/local/bin/composer)
 
 ## PHP 7 Modules
