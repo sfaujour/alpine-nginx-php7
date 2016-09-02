@@ -1,11 +1,13 @@
 # Alpine-Linux + nginx + php7
 
-![](https://images.microbadger.com/badges/image/shito/alpine-nginx-php7.svg)
+[![](https://images.microbadger.com/badges/image/shito/alpine-nginx-php7.svg)](https://microbadger.com/images/shito/alpine-nginx-php7 "Get your own image badge on microbadger.com")
 
 ## Including
  - NGINX 1.* (latest pkgs version)
  - PHP 7.* (latest pkgs version)
  - composer (/usr/local/bin/composer)
+ - curl
+ - bash
 
 ## PHP 7 Modules
  - php7-xml
@@ -21,3 +23,7 @@
  - php7-ctype
  - php7-opcache
  - php7-mbstring
+ - php7-session
+ - php7-pdo_sqlite
+ - php7-sqlite3
+ - php7-pcntl
