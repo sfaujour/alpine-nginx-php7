@@ -35,4 +35,12 @@ RUN ln -s /etc/php7 /etc/php && \
 RUN curl -sS https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer
 
+# Enable default sessions
+RUN mkdir -p /var/lib/php7/sessions
+RUN chown nginx:nginx /var/lib/php7/sessionsÅ
+
+# ADD SOURCE
+RUN mkdir -p /usr/share/nginx/html
+RUN chown -Rf nginx:nginx /usr/share/nginx/html
+
 ENTRYPOINT ["/init"]
