@@ -9,7 +9,6 @@ RUN apk upgrade -U && \
     php7-xml \
     php7-xsl \
     php7-pdo \
-    php7-pdo_mysql \
     php7-mcrypt \
     php7-curl \
     php7-json \
@@ -22,7 +21,6 @@ RUN apk upgrade -U && \
     php7-mbstring \
     php7-session \
     php7-pdo_sqlite \
-    php7-sqlite3 \
     php7-pcntl
 
 COPY /rootfs /
@@ -39,7 +37,6 @@ RUN curl -sS https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer
 
 # ADD SOURCE
-ONBUILD COPY ./application /usr/share/nginx/html
 ONBUILD RUN chown -Rf nginx:nginx /usr/share/nginx/html
 
 ENTRYPOINT ["/init"]
