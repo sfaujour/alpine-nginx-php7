@@ -37,7 +37,7 @@ RUN curl -sS https://getcomposer.org/installer | php \
 
 # Enable default sessions
 RUN mkdir -p /var/lib/php7/sessions
-RUN chown nginx:nginx /var/lib/php7/sessionsÅ
+RUN chown nginx:nginx /var/lib/php7/sessions
 
 # ADD SOURCE
 RUN mkdir -p /usr/share/nginx/html
