@@ -35,8 +35,4 @@ RUN ln -s /etc/php7 /etc/php && \
 RUN curl -sS https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer
 
-# ADD SOURCE
-RUN mkdir -p /usr/share/nginx/html
-ONBUILD RUN chown -Rf nginx:nginx /usr/share/nginx/html
-
 ENTRYPOINT ["/init"]
